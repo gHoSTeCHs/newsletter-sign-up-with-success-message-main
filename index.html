@@ -43,12 +43,19 @@
 						</div>
 						<div class="form">
 							<form action="" class="mailForm">
-								<label for="email"> Email address</label><br />
+								<div class="labeldiv">
+									<label for="email"> Email address</label><br />
+									<h6 class="validate">Valid email required</h6>
+								</div>
+
 								<input
 									type="text"
 									id="email"
-									placeholder="email@company.com" /><br />
-								<button type="submit">Subscribe to monthly newsletter</button>
+									placeholder="email@company.com"
+									class="emailInput" /><br />
+								<button type="submit" class="">
+									Subscribe to monthly newsletter
+								</button>
 							</form>
 						</div>
 					</div>
@@ -60,18 +67,25 @@
 				</div>
 			</div>
 		</section>
-		<!-- Sign-up form end -->
 
-		<!-- Success message start -->
-		<!-- 
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-		<!-- Success message end -->
+		<section class="formfilled">
+			<div class="container">
+				<div class="card complete">
+					<div class="head">
+						<img src="./assets/images/icon-success.svg" alt="" />
+						<h1>Thanks for subscribing!</h1>
+						<p>
+							A confirmation email has been sent to
+							<span class="emailspan">Somadina@gmail.com</span> . Please open it
+							and click the button inside to confirm your subscription.
+						</p>
+					</div>
+					<div class="tail">
+						<button id="dismissBtn">Dismiss message</button>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="script.js"></script>
 	</body>
 </html>

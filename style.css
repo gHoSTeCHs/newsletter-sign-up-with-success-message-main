@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+/* .formSection {
+	display: none;
+} */
+
 /* BODY */
 body {
 	font-family: 'Roboto', sans-serif;
@@ -33,6 +37,27 @@ body {
 	border-radius: 20px;
 	padding: 25px;
 	padding-left: 60px;
+}
+
+.complete {
+	display: none;
+	max-width: 500px;
+	padding: 50px;
+}
+
+.complete h1 {
+	margin-top: 33px;
+	line-height: 3.5rem;
+	margin-bottom: 30px;
+}
+
+.complete p {
+	margin-bottom: 10px;
+}
+
+.emailspan {
+	font-weight: 700;
+	color: hsl(234, 29%, 20%);
 }
 
 /* .sec2 {
@@ -78,6 +103,7 @@ p {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5rem;
+	color: hsl(234, 29%, 20%);
 }
 
 /* FORM ELEMENT */
@@ -95,6 +121,24 @@ input {
 	margin-top: 10px;
 	border-radius: 8px;
 	width: 100%;
+	outline: none;
+}
+
+.labeldiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.validate {
+	font-size: 0.8rem;
+	font-weight: 700;
+	display: none;
+	color: hsl(4, 100%, 67%);
+}
+
+.inputRed {
+	border: 1px solid hsl(4, 100%, 67%);
 }
 
 button {
@@ -113,6 +157,10 @@ button:hover {
 	background-color: hsl(4, 100%, 67%);
 }
 @media only screen and (max-width: 475px) {
+	body {
+		height: 100%;
+	}
+
 	.container {
 		padding: 0;
 	}
@@ -139,7 +187,13 @@ button:hover {
 	body {
 		background-color: white;
 	}
-	body {
-		height: 100%;
+	.complete {
+		display: grid;
+		padding: 30px;
+		grid-template-rows: 5fr 1fr;
+	}
+	.complete h1 {
+		font-size: 2.5rem;
+		line-height: 2.5rem;
 	}
 }
