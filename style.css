@@ -188,7 +188,7 @@ button:hover {
 		background-color: white;
 	}
 	.complete {
-		display: grid;
+		display: none;
 		padding: 30px;
 		grid-template-rows: 5fr 1fr;
 	}
