@@ -1,3 +1,4 @@
+// Iitializing varibles and selecors
 const form = document.querySelector('.mailForm');
 const input = document.querySelector('input');
 const validate = document.querySelector('.validate');
@@ -5,13 +6,16 @@ const card = document.querySelector('.card');
 const emailspan = document.querySelector('.emailspan');
 const complete = document.querySelector('.complete');
 const dismissBtn = document.getElementById('dismissBtn');
-
 const emailInput = document.querySelector('.emailInput');
+
+// Checking if email is valid for every input or keystroke
 emailInput.addEventListener('input', () => {
 	function validateEmail(emailInput) {
+		// REGEX
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		return emailRegex.test(emailInput.value);
 	}
+	//
 	if (validateEmail(emailInput) === false) {
 		emailInput.style.border = '1px solid hsl(4, 100%, 67%)';
 		validate.style.display = 'block';
@@ -19,6 +23,7 @@ emailInput.addEventListener('input', () => {
 		emailInput.style.border = '1px solid hsl(231, 7%, 60%)';
 		validate.style.display = 'none';
 	}
+	//
 });
 
 form.addEventListener('submit', (e) => {
@@ -39,6 +44,7 @@ form.addEventListener('submit', (e) => {
 		emailspan.textContent = input.value;
 		complete.style.display = 'block';
 	}
+	//
 });
 
 dismissBtn.addEventListener('click', () => {

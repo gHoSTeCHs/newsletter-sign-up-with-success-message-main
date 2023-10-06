@@ -6,10 +6,6 @@
 	box-sizing: border-box;
 }
 
-/* .formSection {
-	display: none;
-} */
-
 /* BODY */
 body {
 	font-family: 'Roboto', sans-serif;
@@ -39,6 +35,7 @@ body {
 	padding-left: 60px;
 }
 
+/* CONFIRMATION */
 .complete {
 	display: none;
 	max-width: 500px;
@@ -59,14 +56,6 @@ body {
 	font-weight: 700;
 	color: hsl(234, 29%, 20%);
 }
-
-/* .sec2 {
-	background: url('./assets/images/illustration-sign-up-desktop.svg');
-	width: 470px;
-	height: 590px;
-	background-size: cover;
-	border-radius: 0;
-} */
 
 /* SEC1 */
 .sec1 {
@@ -137,10 +126,7 @@ input {
 	color: hsl(4, 100%, 67%);
 }
 
-.inputRed {
-	border: 1px solid hsl(4, 100%, 67%);
-}
-
+/* BUTTON */
 button {
 	margin-top: 1.5rem;
 	font-size: 1.1rem;
@@ -156,6 +142,8 @@ button {
 button:hover {
 	background-color: hsl(4, 100%, 67%);
 }
+
+/* MOBILE STYLING */
 @media only screen and (max-width: 475px) {
 	body {
 		height: 100%;
